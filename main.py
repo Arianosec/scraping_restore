@@ -35,7 +35,7 @@ def get_data_with_selenium():
                     }
                 )
                 count += 1
-        with open("item_list.append.json", "a", encoding="utf-8") as file:
+        with open("item_list.json", "a", encoding="utf-8") as file:
             json.dump(item_list, file, indent=4, ensure_ascii=False)
         time.sleep(5)
 
